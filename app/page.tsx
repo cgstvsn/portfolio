@@ -62,13 +62,12 @@ export default function Home() {
   return (
     <main className='w-full max-w-7xl mx-auto min-h-screen px-4 sm:px-8'>
       <Hero />
-      <div className='flex gap-3 mt-3'>
+      <div className='flex flex-col md:flex-row gap-3 mt-3'>
         <Image
           src={Me}
           alt='A photo of me'
-          className='basis-1/2 w-full bg-white rounded-2xl shadow-lg saturate-0 hidden lg:block object-cover'
+          className='basis-1/2 w-full max-w-[200px] bg-white rounded-2xl shadow-lg saturate-0 hidden lg:block object-cover'
         />
-        <div className='w-full bg-white rounded-2xl px-8 py-4 shadow-lg'></div>
         <div className='w-full bg-white rounded-2xl px-8 py-4 shadow-lg text-center'>
           <h1 className='text-2xl font-bold text-zinc-800 mb-2'>Skills</h1>
           <p className='mb-1 text-zinc-500'>Frontend Development</p>
@@ -117,6 +116,18 @@ export default function Home() {
               </svg>
             </SkillHover>
           </div>
+        </div>
+        <div className='w-full bg-white rounded-2xl px-8 py-4 shadow-lg'>
+          <h1 className='text-2xl font-bold text-zinc-800 mb-2'>About Me</h1>
+          <p className='mb-4 text-zinc-500'>
+            I&apos;m a growing frontend developer from New Jersey that comes
+            from a background in branding and graphic design. I&pos;m looking
+            for my first full-time position as a developer.
+          </p>
+          <p className='mb-4 text-zinc-500'>
+            In my free time I enjoy developing games a VFX and Tech Artist,
+            working on personal projects, and photography.
+          </p>
         </div>
       </div>
     </main>
