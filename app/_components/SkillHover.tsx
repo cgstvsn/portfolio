@@ -9,7 +9,7 @@ function SkillHover(props: any) {
         </p>
       </div>
 
-      <div className='flex items-center justify-center rounded-lg bg-white border-2 border-zinc-800 w-12 h-12 xl:w-14 xl:h-14 p-2 xl:p-3 text-zinc-800 shadow-md select-none hover:bg-zinc-800 hover:text-white transition'>
+      <div className='flex items-center justify-center rounded-lg bg-white border-2 border-zinc-800 aspect-square w-14 h-14 p-2 md:p-3 text-zinc-800 shadow-md select-none hover:bg-zinc-800 hover:text-white transition'>
         {children}
       </div>
     </div>
