@@ -40,7 +40,7 @@ const Header = () => {
 
   return (
     <div className='w-full my-4'>
-      <div className='flex items-center justify-between w-full max-w-7xl mx-auto'>
+      <div className='flex items-center justify-between w-full max-w-7xl mx-auto px-4 sm:px-8'>
         <Link
           href='/'
           className='text-xl font-bold text-zinc-800 tracking-tighter'
