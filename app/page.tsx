@@ -74,9 +74,32 @@ export default function Home() {
   })
 
   return (
-    <main>
+    <main className="relative">
+      <svg
+        className='absolute left-0 w-[1200px] -top-24 -z-10 h-[1000px] stroke-zinc-500/20 [mask-image:radial-gradient(50%_100%_at_top,white,transparent)]'
+        aria-hidden='true'
+      >
+        <defs>
+          <pattern
+            id='983e3e4c-de6d-4c3f-8d64-b9761d1534cc'
+            width='50'
+            height='50'
+            x='50%'
+            y='70'
+            patternUnits='userSpaceOnUse'
+          >
+            <path d='M.5 200V.5H200' fill='none'></path>
+          </pattern>
+        </defs>
+        <rect
+          width='100%'
+          height='100%'
+          strokeWidth='0'
+          fill='url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)'
+        />
+      </svg>
       {/* static sidebar */}
-      <div className="fixed top-12 left-0 bottom-0 w-72 bg-zinc-100 hidden lg:block">
+      <div className="fixed top-12 left-0 bottom-0 w-72 hidden lg:block">
         <div className="flex flex-col items-center justify-between absolute top-0 bottom-0 w-full pt-16 p-8">
           <h1 className="relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[3px] after:w-5 after:animate-caret after:bg-zinc-400">cgstvsn</h1>
           {/* bottom float */}
