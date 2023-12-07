@@ -70,7 +70,7 @@ const projects = [
 export default function Home() {
 
   const projectCards = projects.map((project) => {
-    return <ProjectCard label={project.label} image={project.image} description = {project.description} url={project.url} sourceUrl={project.sourceUrl} />
+    return <ProjectCard key={project.label} label={project.label} image={project.image} description = {project.description} url={project.url} sourceUrl={project.sourceUrl} />
   })
 
   return (
