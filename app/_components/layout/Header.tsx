@@ -23,7 +23,7 @@ const Header = () => {
     {
       href: "/photography",
       label: "Photography",
-    }
+    },
   ];
 
   const buttons = links.map((link) => {
@@ -42,9 +42,9 @@ const Header = () => {
 
   return (
     <div className='z-10 fixed flex items-center justify-between w-full h-12 bg-zinc-100/70 backdrop-blur-md px-4 font-semibold'>
-      <h2>Welcome</h2>
-      <div>
-        {buttons}
+      <div className='flex justify-between w-full max-w-7xl px-4 mx-auto'>
+        <h2 className='font-bold tracking-tighter'>CGSTVSN</h2>
+        <div>{buttons}</div>
       </div>
     </div>
   );

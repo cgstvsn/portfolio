@@ -1,7 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Disclosure, Transition } from "@headlessui/react";
-import { Github, Linkedin, Mails, ExternalLink } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mails,
+  ExternalLink,
+  ChevronDown,
+  ChevronRight,
+} from "lucide-react";
 import Hero from "./_components/home/Hero";
 import TableOfContents from "./_components/home/TableOfContents";
 import SkillSection from "./_components/home/SkillSection";
@@ -28,7 +35,7 @@ const ProjectCard = (props: any) => {
   const { label, image, description, url, sourceUrl } = props;
 
   return (
-    <div className='flex flex-col gap-4 w-full p-4 bg-zinc-200 rounded-3xl'>
+    <div className='flex flex-col gap-4 w-full p-2 bg-zinc-200 rounded-2xl'>
       <div className='relative w-full aspect-video'>
         <Image
           fill
@@ -37,7 +44,7 @@ const ProjectCard = (props: any) => {
           className='h-full rounded-xl object-cover object-top shadow-md saturate-0 opacity-90'
         />
       </div>
-      <div className='flex flex-col justify-between gap-2 w-full sm:basis-2/3'>
+      <div className='flex flex-col justify-between gap-2 px-2 py-2  w-full sm:basis-2/3'>
         <div className='grow mb-2'>
           <Link
             href={url}
@@ -139,47 +146,65 @@ export default function Home() {
           fill='url(#983e3e4c-de6d-4c3f-8d64-b9761d1534cc)'
         />
       </svg>
-      {/* static sidebar */}
-      <div className='fixed top-12 left-0 bottom-0 w-72 hidden lg:block'>
-        <div className='flex flex-col items-center justify-between absolute top-0 bottom-0 w-full pt-16 p-8'>
-          <h1 className='relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[3px] after:w-5 after:animate-caret after:bg-zinc-400'>
-            cgstvsn
-          </h1>
-          {/* bottom float */}
-          <div className='w-full flex flex-col gap-2 items-center'>
-            <SocialButton href='#'>
-              <Github size={18} /> GitHub
-            </SocialButton>
-            <SocialButton href='#'>
-              <Linkedin size={18} /> LinkedIn
-            </SocialButton>
-            <button className='flex items-center justify-center gap-2 bg-zinc-800 text-zinc-200 font-semibold hover:brightness-95 transition w-full rounded-lg py-2'>
-              <Mails size={18} /> Contact
-            </button>
-          </div>
-        </div>
-      </div>
       {/* content */}
-      <div className='lg:pl-72 pt-12 min-h-screen'>
-        <div className='flex flex-col items-center lg:items-start gap-4 w-full lg:pt-16 px-4'>
-          <h1 className='lg:hidden my-6 relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[6px] after:w-5 after:animate-caret after:bg-zinc-400'>
-            cgstvsn
-          </h1>
-          {/* Hero */}
-          <div className='flex flex-col justify-between w-full bg-zinc-800 h-96 rounded-3xl p-8'>
-            <p className='text-3xl text-zinc-200'>Hello!</p>
-            <hr className='w-48 opacity-75' />
+      <div className='w-full pt-12 min-h-screen'>
+        {/* Hero */}
+        <div className='w-full py-48'>
+          <div className='w-full max-w-7xl mx-auto px-4'>
+            <p className='text-3xl text-zinc-800'>Hello!</p>
             <div className='flex flex-col gap-4'>
               <div className='flex'>
-                <h1 className='text-8xl font-bold text-zinc-200'>World</h1>
-                <div className='w-4 h-4 mt-2 ml-1 rounded-full border-[4px] border-zinc-200' />
+                <h1 className='text-8xl font-bold text-zinc-800'>
+                  I&apos;m Cam
+                </h1>
+                <div className='w-4 h-4 mt-2 ml-1 rounded-full border-[4px] border-zinc-800' />
               </div>
-              <p className='text-zinc-200 max-w-lg'>
+              <p className='text-zinc-800 max-w-lg'>
                 I&apos;m a frontend developer based in the US with a background
                 in graphic and branding design.
               </p>
+              <a
+                href='https://cgustavson.com/resume'
+                className='flex items-center gap-2 mt-24'
+              >
+                View my resume{" "}
+                <span className='float-right text-zinc-800'>
+                  <ChevronRight size={18} />
+                </span>
+              </a>
+              {/* <SocialButton href='#'>
+                <Github size={18} /> GitHub
+              </SocialButton>
+              <SocialButton href='#'>
+                <Linkedin size={18} /> LinkedIn
+              </SocialButton>
+              <button className='flex items-center justify-center gap-2 bg-zinc-800 text-zinc-200 font-semibold hover:brightness-95 transition w-full rounded-lg py-2'>
+                <Mails size={18} /> Contact
+              </button> */}
             </div>
           </div>
+        </div>
+
+        {/* skills cloud*/}
+        <div className='w-full bg-zinc-100 py-12'>
+          <div className='w-full max-w-7xl mx-auto px-4 text-center '>
+            <h1 className='text-3xl font-bold text-zinc-00 mb-10 ml-1'>
+              My skills
+            </h1>
+            <SkillSection />
+            <p className='w-full ml-1 mt-10 text-zinc-500'>
+              That&apos;s not all, click to see more!
+            </p>
+            <ChevronDown size={18} className='text-zinc-500 mx-auto mt-4' />
+          </div>
+        </div>
+
+        <div className='flex flex-col items-center lg:items-start gap-4 w-full'>
+          {/* <h1 className='lg:hidden my-6 relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[6px] after:w-5 after:animate-caret after:bg-zinc-400'>
+            cgstvsn
+          </h1> */}
+          {/* Hero */}
+          <div className='max-w-full'></div>
 
           {/* Skills */}
           {/* <div className="flex items-center">
@@ -188,16 +213,18 @@ export default function Home() {
           </div>
           <SkillSection /> */}
 
-          {/* Projects */}
-          <div className='flex items-center'>
-            <h1 className='text-3xl font-bold text-zinc-800 mt-4 ml-1'>
-              /projects
-            </h1>
-            <div className='w-2 h-2 ml-1 rounded-full border-[2px] border-zinc-800' />
-          </div>
+          <div className='w-full max-w-7xl mx-auto'>
+            {/* Projects */}
+            <div className='flex items-center'>
+              <h1 className='text-3xl font-bold text-zinc-800 mb-8 ml-1'>
+                /projects
+              </h1>
+              {/* <div className='w-2 h-2 ml-1 rounded-full border-[2px] border-zinc-800' /> */}
+            </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2  gap-2 w-full'>
-            {projectCards}
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+              {projectCards}
+            </div>
           </div>
         </div>
       </div>
