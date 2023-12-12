@@ -2,7 +2,7 @@ import SkillHover from "./SkillHover";
 
 const SkillSection = () => {
   return (
-    <div className='-ml-4 col-start-2 col-span-2 flex flex-wrap items-center  gap-3'>
+    <div className='-ml-4 col-start-2 col-span-3 flex flex-wrap items-center  gap-3'>
       <SkillHover label='ReactJS'>
         <div className='flex items-center gap-2'>
           <svg viewBox='0 0 512 512' fill='currentColor' className='w-8'>

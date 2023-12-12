@@ -9,8 +9,8 @@ const Header = () => {
 
   const links = [
     {
-      href: "/about",
-      label: "About me",
+      href: "/resume",
+      label: "Resume",
     },
     {
       href: "/projects",
@@ -33,7 +33,7 @@ const Header = () => {
       <Link
         href={link.href}
         key={link.label}
-        className={`pl-6 py-1 rounded-full text-zinc-800`}
+        className={`px-4 py-2 rounded-full ${isActive ? "bg-zinc-100" : "hover:bg-white"} hover:bg-white transition`}
       >
         {link.label}
       </Link>
@@ -41,12 +41,18 @@ const Header = () => {
   });
 
   return (
-    <div className='z-10 fixed flex items-center justify-between w-full h-12 bg-zinc-100/70 backdrop-blur-md px-4 font-semibold'>
-      <div className='flex justify-between w-full max-w-7xl px-4 mx-auto'>
-        <h2 className='font-bold tracking-tighter'>CGSTVSN</h2>
-        <div>{buttons}</div>
+    <>
+      <div className="z-20 fixed left-8 right-4 max-w-7xl mx-auto text-zinc-800">
+        <div className='flex items-center gap-8 h-full w-full bg-zinc-200/60 px-8 py-3 backdrop-blur-md rounded-2xl mx-auto my-2 shadow-lg'>
+          <Link href="/" className='font-bold tracking-tighter'>CGSTVSN</Link>
+          <div>{buttons}</div>
+        </div>
       </div>
-    </div>
+      <div className="z-10 fixed top-0 left-0 right-0 h-16 bg-gradient-to-b from-white to-white/0"/>
+    </>
+    
+   
+
   );
 };
 
