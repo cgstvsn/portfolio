@@ -159,19 +159,22 @@ export default function Home() {
                 </h1>
                 <div className='w-4 h-4 mt-2 ml-1 rounded-full border-[4px] border-zinc-800' />
               </div>
-              <p className='text-zinc-800 max-w-lg'>
-                I&apos;m a frontend developer based in the US with a background
-                in graphic and branding design.
-              </p>
-              <a
-                href='https://cgustavson.com/resume'
-                className='flex items-center gap-2 mt-24'
-              >
-                View my resume{" "}
-                <span className='float-right text-zinc-800'>
-                  <ChevronRight size={18} />
-                </span>
-              </a>
+              <div className='grid grid-cols-3'>
+                <p className='col-start-2 col-span-2 text-zinc-800 max-w-lg'>
+                  I&apos;m a frontend developer based in the US with a
+                  background in graphic and branding design.
+                </p>
+                <a
+                  href='https://cgustavson.com/resume'
+                  className='col-start-2 col-span-2 flex items-center gap-2 mt-24'
+                >
+                  View my resume{" "}
+                  <span className='float-right text-zinc-800'>
+                    <ChevronRight size={18} />
+                  </span>
+                </a>
+              </div>
+
               {/* <SocialButton href='#'>
                 <Github size={18} /> GitHub
               </SocialButton>
@@ -187,19 +190,27 @@ export default function Home() {
 
         {/* skills cloud*/}
         <div className='w-full bg-zinc-100 py-12'>
-          <div className='w-full max-w-7xl mx-auto px-4 text-center '>
-            <h1 className='text-3xl font-bold text-zinc-00 mb-10 ml-1'>
-              My skills
-            </h1>
-            <SkillSection />
-            <p className='w-full ml-1 mt-10 text-zinc-500'>
-              That&apos;s not all, click to see more!
-            </p>
-            <ChevronDown size={18} className='text-zinc-500 mx-auto mt-4' />
+          <div className='w-full max-w-7xl mx-auto px-4'>
+            <div className='grid grid-cols-3'>
+              <h1 className='text-3xl font-bold text-zinc-00 mb-10 ml-1'>
+                My skills
+              </h1>
+            </div>
+            <div className='grid grid-cols-3'>
+              <SkillSection />
+            </div>
+            <div className='grid grid-cols-3'>
+              <div className='col-start-2 flex gap-2 items-center mt-8'>
+                <p className='ml-1 text-zinc-500'>
+                  That&apos;s not all, click to see more!
+                </p>
+                <ChevronDown size={18} className='text-zinc-500' />
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className='flex flex-col items-center lg:items-start gap-4 w-full'>
+        <div className='flex flex-col items-center lg:items-start gap-4 w-full my-8'>
           {/* <h1 className='lg:hidden my-6 relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[6px] after:w-5 after:animate-caret after:bg-zinc-400'>
             cgstvsn
           </h1> */}
@@ -217,7 +228,7 @@ export default function Home() {
             {/* Projects */}
             <div className='flex items-center'>
               <h1 className='text-3xl font-bold text-zinc-800 mb-8 ml-1'>
-                /projects
+                Selected Projects
               </h1>
               {/* <div className='w-2 h-2 ml-1 rounded-full border-[2px] border-zinc-800' /> */}
             </div>
