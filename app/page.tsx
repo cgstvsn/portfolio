@@ -14,6 +14,7 @@ import Hero from "./_components/home/Hero";
 import TableOfContents from "./_components/home/TableOfContents";
 import SkillSection from "./_components/home/SkillSection";
 import SkillHover from "./_components/home/SkillHover";
+import ProjectCard from "./_components/home/ProjectCard";
 import Me from "../public/me.jpg";
 import TpToolkit from "../public/tptoolkit.png";
 import Facekick from "../public/facekick.png";
@@ -25,61 +26,14 @@ const SocialButton = (props: any) => {
   return (
     <Link
       href={href}
-      className='flex items-center justify-center gap-2 bg-zinc-200 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'
+      className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-200 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'
     >
       {children}
     </Link>
   );
 };
 
-const ProjectCard = (props: any) => {
-  const { label, image, description, url, sourceUrl } = props;
 
-  return (
-    <div className='grid grid-cols-4 w-full'>
-      <div className="col-start-2 col-span-3 flex gap-8 w-full py-12 border-b-2 border-zinc-400">
-
-        <div className='relative h-64 w-96'>
-          <Image
-            fill
-            alt={label}
-            src={image}
-            className='rounded-lg object-cover object-center'
-          />
-        </div>
-        <div className='flex flex-col justify-between gap-2 px-2 py-2 w-full sm:basis-2/3'>
-          <div className='grow mb-2'>
-            <Link
-              href={url}
-              target='_blank'
-              className='font-bold text-3xl text-zinc-800'
-            >
-              {label}
-            </Link>
-            <p className='mt-8 line-clamp-4'>{description}</p>
-          </div>
-          <div className="flex gap-2 mt-12">
-            <Link
-              href={sourceUrl}
-              target="_blank"
-              className='flex items-center gap-2 bg-zinc-200 text-zinc-800 font-semibold w-full px-4 py-2 hover:brightness-95 transition rounded-lg'
-            >
-              <Github size={18} /> View source
-            </Link>
-            <Link
-              href={url}
-              target="_blank"
-              className='flex items-center gap-2 bg-zinc-800 text-zinc-200 font-semibold w-full px-4 py-2 hover:brightness-95 transition rounded-lg'
-            >
-              <ExternalLink size={18} /> View site
-            </Link>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  );
-};
 
 const projects = [
   {
@@ -133,7 +87,7 @@ export default function Home() {
   return (
     <main className='relative'>
       <svg
-        className='absolute left-0 w-[1200px] -top-24 -z-10 h-[1000px] stroke-zinc-500/20 [mask-image:radial-gradient(50%_100%_at_top,white,transparent)]'
+        className='absolute left-0 w-full -top-24 -z-10 h-[1000px] stroke-zinc-500/20 [mask-image:radial-gradient(50%_100%_at_top,white,transparent)]'
         aria-hidden='true'
       >
         <defs>
@@ -163,11 +117,11 @@ export default function Home() {
             <p className='text-3xl text-zinc-800'>Hello!</p>
 
             <div className='flex -my-4'>
-              <h1 className='text-[148px] font-bold text-zinc-800'>
+              <h1 className='text-[120px] lg:text-[148px] font-bold text-zinc-800'>
                 {/* I&apos;m Cam */}
                 World
               </h1>
-              <div className='w-4 h-4 mt-2 ml-1 rounded-full border-[4px] border-zinc-800' />
+              {/* <div className='w-4 h-4 mt-2 ml-1 rounded-full border-[4px] border-zinc-800' /> */}
             </div>
 
             <p className='text-zinc-800 max-w-3xl'>
@@ -186,14 +140,14 @@ export default function Home() {
               </span>
             </a>
               
-            <div className="col-start-2 col-span-3 flex items-start gap-2">
+            <div className="col-start-2 col-span-3 flex flex-col sm:flex-row items-start gap-2">
               <SocialButton href='#'>
                 <Github size={18} /> GitHub
               </SocialButton>
               <SocialButton href='#'>
                 <Linkedin size={18} /> LinkedIn
               </SocialButton>
-              <button className='flex items-center justify-center gap-2 bg-zinc-200 text-zinc-800  hover:brightness-95 transition rounded-lg px-8 py-2'>
+              <button className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-200 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'>
                 <Mails size={18} /> Email
               </button>
             </div>
@@ -204,15 +158,15 @@ export default function Home() {
         {/* skills cloud*/}
         <div className='w-full bg-zinc-100 py-12'>
           <div className='w-full max-w-7xl mx-auto px-8'>
-            <div className='sticky top-24 grid grid-cols-4'>
+            <div className='lg:sticky text-center lg:text-left top-24 grid lg:grid-cols-4'>
               <h1 className='text-2xl font-bold text-zinc-00 mb-10 ml-1'>
                 My skills
               </h1>
             </div>
-            <div className='grid grid-cols-4'>
+            <div className='grid lg:grid-cols-4'>
               <SkillSection />
             </div>
-            <div className='grid grid-cols-4'>
+            <div className='grid lg:grid-cols-4'>
               <div className='col-start-2 flex gap-2 items-center mt-8'>
                 <p className='ml-1 text-zinc-500'>
                   That&apos;s not all, click to see more!
@@ -224,28 +178,13 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col items-center lg:items-start gap-4 w-full my-8'>
-          {/* <h1 className='lg:hidden my-6 relative w-max text-4xl font-extrabold text-zinc-800 after:absolute pr-2 after:-right-4 after:bottom-[7px] after:h-[6px] after:w-5 after:animate-caret after:bg-zinc-400'>
-            cgstvsn
-          </h1> */}
-          {/* Hero */}
-          <div className='max-w-full'></div>
-
-          {/* Skills */}
-          {/* <div className="flex items-center">
-            <h1 className="text-3xl font-bold text-zinc-800 mt-4 ml-1">/skills</h1>
-            <div className="w-2 h-2 ml-1 rounded-full border-[2px] border-zinc-800"/>
-          </div>
-          <SkillSection /> */}
-
           <div className='w-full max-w-7xl mx-auto px-8'>
             {/* Projects */}
-            <div className='sticky top-24 flex items-center'>
+            <div className='lg:sticky text-center lg:text-left top-24 grid lg:grid-cols-4'>
               <h1 className='text-2xl font-bold text-zinc-800 mb-8 ml-1'>
                 Selected Projects
               </h1>
-              {/* <div className='w-2 h-2 ml-1 rounded-full border-[2px] border-zinc-800' /> */}
             </div>
-
             <div className='flex flex-col gap-4'>
               {projectCards}
             </div>
