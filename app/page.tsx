@@ -13,13 +13,10 @@ import {
 import Hero from "./_components/home/Hero";
 import TableOfContents from "./_components/home/TableOfContents";
 import SkillSection from "./_components/home/SkillSection";
+import FeaturedTabs from "./_components/home/FeaturedTabs";
 import SkillHover from "./_components/home/SkillHover";
-import ProjectCard from "./_components/home/ProjectCard";
+
 import Me from "../public/me.jpg";
-import TpToolkit from "../public/tptoolkit.png";
-import Facekick from "../public/facekick.png";
-import ULC from "../public/ulcgenerator.png";
-import This from "../public/this.png";
 
 const SocialButton = (props: any) => {
   const { children, href } = props;
@@ -33,57 +30,7 @@ const SocialButton = (props: any) => {
   );
 };
 
-
-
-const projects = [
-  {
-    label: "Reverse Geocoder",
-    image: TpToolkit,
-    url: "https://tptoolkit.com",
-    sourceUrl: "https://github.com/Flohhhhh/tpa-tools",
-    description:
-      "This project is a reverse geo-coder for locations along the major highways in New Jersey, the NJ Turnpike and the Garden State Parkway. I created this for work, since there was a need for a tool like this to improve our workflow.",
-  },
-  {
-    label: "Facekick Studios",
-    image: Facekick,
-    url: "https://facekick-site.vercel.app",
-    sourceUrl: "#",
-    description:
-      "I created this page for a friend of mine for his programming business. I was tasked with creating the frontend including buttons that were ready for backend logic.",
-  },
-  {
-    label: "ULC Generator",
-    image: ULC,
-    url: "https://ulc.dwnstr.com/generator",
-    sourceUrl: "https://github.com/dwnstr/ulc-app",
-    description:
-      "I created a fully-featured script for FiveM called Ultimate Lighting Controller which requires a configuration file. Since many of the users are not programmers I created this tool so that users could generate configuration files using an intuitive GUI.",
-  },
-  {
-    label: "This portfolio!",
-    image: This,
-    url: "#",
-    sourceUrl: "https://github.com/cgstvsn/portfolio",
-    description:
-      "This portfolio itself was carefully crafted using NextJS and Tailwind CSS. Other tools used include Headless UI and Lucide Icons.",
-  },
-];
-
 export default function Home() {
-  const projectCards = projects.map((project) => {
-    return (
-      <ProjectCard
-        key={project.label}
-        label={project.label}
-        image={project.image}
-        description={project.description}
-        url={project.url}
-        sourceUrl={project.sourceUrl}
-      />
-    );
-  });
-
   return (
     <main className='relative'>
       <svg
@@ -125,9 +72,10 @@ export default function Home() {
             </div>
 
             <p className='text-zinc-800 max-w-3xl'>
-              I&apos;m a frontend developer based in the US with a background in branding
-              and graphic design. I enjoy working on open source web projects and working
-              on video games and software as a tech artist in Unreal Engine.
+              I&apos;m a frontend developer based in the US with a background in
+              branding and graphic design. I enjoy working on open source web
+              projects and working on video games and software as a tech artist
+              in Unreal Engine.
             </p>
 
             <a
@@ -139,8 +87,8 @@ export default function Home() {
                 <ChevronRight size={18} />
               </span>
             </a>
-              
-            <div className="col-start-2 col-span-3 flex flex-col sm:flex-row items-start gap-2">
+
+            <div className='col-start-2 col-span-3 flex flex-col sm:flex-row items-start gap-2'>
               <SocialButton href='#'>
                 <Github size={18} /> GitHub
               </SocialButton>
@@ -151,7 +99,6 @@ export default function Home() {
                 <Mails size={18} /> Email
               </button>
             </div>
-
           </div>
         </div>
 
@@ -177,18 +124,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col items-center lg:items-start gap-4 w-full my-8'>
-          <div className='w-full max-w-7xl mx-auto px-8'>
-            {/* Projects */}
-            <div className='lg:sticky text-center lg:text-left top-24 grid lg:grid-cols-4'>
-              <h1 className='text-2xl font-bold text-zinc-800 mb-8 ml-1'>
-                Selected Projects
-              </h1>
-            </div>
-            <div className='flex flex-col gap-4'>
-              {projectCards}
-            </div>
-          </div>
+        <div className='flex flex-col items-center lg:items-start gap-4 w-full py-12'>
+          <FeaturedTabs />
         </div>
       </div>
     </main>
