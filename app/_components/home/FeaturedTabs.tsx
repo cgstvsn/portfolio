@@ -110,24 +110,25 @@ const FeaturedTabs = () => {
               <h1 className='text-2xl font-bold text-zinc-00 mb-10 ml-1'>
                 {tabs[selectedIndex].header}
               </h1>
+              <div className='flex flex-row lg:flex-col gap-2'>
+                {tabs.map((tab) => (
+                  <Tab
+                    key={tab.label}
+                    className={({ selected }) =>
+                      classNames(
+                        "w-full py-2 px-4 rounded-lg transition  lg:text-left",
+                        selected
+                          ? "bg-zinc-100 cursor-default"
+                          : "bg-white hover:bg-zinc-100 border border-zinc-200"
+                      )
+                    }
+                  >
+                    {tab.label}
+                  </Tab>
+                ))}
+              </div>
             </div>
-            <div className='flex flex-row lg:flex-col gap-2'>
-              {tabs.map((tab) => (
-                <Tab
-                  key={tab.label}
-                  className={({ selected }) =>
-                    classNames(
-                      "w-full py-2 px-4 rounded-lg transition  lg:text-left",
-                      selected
-                        ? "bg-zinc-100 cursor-default"
-                        : "bg-white hover:bg-zinc-100"
-                    )
-                  }
-                >
-                  {tab.label}
-                </Tab>
-              ))}
-            </div>
+
           </Tab.List>
 
           {/* right column / tab render */}

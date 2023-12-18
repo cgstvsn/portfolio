@@ -103,26 +103,9 @@ export default function Home() {
         </div>
 
         {/* skills cloud*/}
-        <div className='w-full bg-zinc-100 py-12'>
-          <div className='w-full max-w-7xl mx-auto px-8'>
-            <div className='lg:sticky text-center lg:text-left top-24 grid lg:grid-cols-4'>
-              <h1 className='text-2xl font-bold text-zinc-00 mb-10 ml-1'>
-                My skills
-              </h1>
-            </div>
-            <div className='grid lg:grid-cols-4'>
+        
               <SkillSection />
-            </div>
-            <div className='grid lg:grid-cols-4'>
-              <div className='col-start-2 flex gap-2 items-center mt-8'>
-                <p className='ml-1 text-zinc-500'>
-                  That&apos;s not all, click to see more!
-                </p>
-                <ChevronDown size={18} className='text-zinc-500' />
-              </div>
-            </div>
-          </div>
-        </div>
+            
 
         <div className='flex flex-col items-center lg:items-start gap-4 w-full py-12'>
           <FeaturedTabs />
