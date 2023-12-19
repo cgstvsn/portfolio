@@ -10,29 +10,32 @@ const config: Config = {
     extend: {
       animation: {
         //@ts-ignore
-        'caret': 'blink 1s linear infinite',
+        caret: "blink 1s linear infinite",
       },
       keyframes: {
         blink: {
-          '0%': {
-            opacity: '0',
+          "0%": {
+            opacity: "0",
           },
-          '0.1%': {
-            opacity: '1',
+          "0.1%": {
+            opacity: "1",
           },
-          '50%': {
-            opacity: '1',
+          "50%": {
+            opacity: "1",
           },
-          '50.1%': {
-            opacity: '0',
+          "50.1%": {
+            opacity: "0",
           },
-          '100%': {
-            opacity: '0',
+          "100%": {
+            opacity: "0",
           },
         },
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-gradient-mask-image"),
+    require("tailwindcss-hero-patterns"),
+  ],
 };
 export default config;

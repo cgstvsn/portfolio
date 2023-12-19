@@ -13,7 +13,9 @@
     "lucide-react": "^0.294.0",
     "next": "14.0.3",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-gradient-mask-image": "^1.1.0",
+    "tailwindcss-hero-patterns": "^0.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",

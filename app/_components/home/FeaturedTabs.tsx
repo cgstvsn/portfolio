@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import { Tab } from "@headlessui/react";
 import ProjectCard from "./ProjectCard";
 
-import TpToolkit from "@/public/tptoolkit.png";
-import Facekick from "@/public/facekick.png";
-import ULC from "@/public/ulcgenerator.png";
-import This from "@/public/this.png";
+import TpToolkit from "@/public/thumbnails/tptoolkit.png";
+import Facekick from "@/public/thumbnails/facekick.png";
+import ULC from "@/public/thumbnails/ulcgenerator.png";
+import This from "@/public/thumbnails/this.png";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
