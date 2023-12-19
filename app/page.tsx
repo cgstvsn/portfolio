@@ -1,16 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Disclosure, Transition } from "@headlessui/react";
-import {
-  Github,
-  Linkedin,
-  Mails,
-  ExternalLink,
-  ChevronDown,
-  ChevronRight,
-  BookOpenText,
-} from "lucide-react";
-import Hero from "./_components/home/Hero";
+import { Github, Linkedin, Mails, ChevronRight } from "lucide-react";
 import TableOfContents from "./_components/home/TableOfContents";
 import SkillSection from "./_components/home/SkillSection";
 import FeaturedTabs from "./_components/home/FeaturedTabs";
@@ -64,7 +54,7 @@ export default function Home() {
             <p className='text-3xl text-zinc-800'>Hello!</p>
 
             <div className='flex -my-4'>
-              <h1 className='text-[120px] lg:text-[148px] font-bold text-zinc-800'>
+              <h1 className='text-[100px] lg:text-[148px] font-bold text-zinc-800'>
                 {/* I&apos;m Cam */}
                 World
               </h1>
@@ -103,9 +93,8 @@ export default function Home() {
         </div>
 
         {/* skills cloud*/}
-        
-              <SkillSection />
-            
+
+        <SkillSection />
 
         <div className='flex flex-col items-center lg:items-start gap-4 w-full py-12'>
           <FeaturedTabs />

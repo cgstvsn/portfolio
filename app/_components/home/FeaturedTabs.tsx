@@ -105,6 +105,7 @@ const FeaturedTabs = () => {
         {/* 2 column container */}
         <div className='top-24 lg:grid grid-cols-4 gap-4'>
           {/* left column */}
+          {/* TODO make button group instead of 3 buttons */}
           <Tab.List>
             <div className='lg:sticky text-center lg:text-left top-24'>
               <h1 className='text-2xl font-bold text-zinc-00 mb-10 ml-1'>
@@ -128,7 +129,6 @@ const FeaturedTabs = () => {
                 ))}
               </div>
             </div>
-
           </Tab.List>
 
           {/* right column / tab render */}

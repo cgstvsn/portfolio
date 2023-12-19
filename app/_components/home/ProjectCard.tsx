@@ -28,7 +28,7 @@ const ProjectCard = (props: any) => {
           </Link>
           <p className='mt-8 line-clamp-4'>{description}</p>
         </div>
-        <div className='flex gap-2 mt-12'>
+        <div className='flex gap-2 mt-8'>
           <Link
             href={sourceUrl}
             target='_blank'
