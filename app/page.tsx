@@ -50,7 +50,7 @@ export default function Home() {
             </p>
 
             <a
-              href='https://cgustavson.com/resume'
+              href='https://rxresu.me/camgus322/frontend'
               className='group col-start-2 col-span-3 flex items-center gap-2 mb-16'
             >
               View my resume!

@@ -15,10 +15,10 @@ const Header = () => {
       href: "/resume",
       label: "Resume",
     },
-    {
-      href: "/projects",
-      label: "Projects",
-    },
+    // {
+    //   href: "/projects",
+    //   label: "Projects",
+    // },
     {
       href: "/design",
       label: "Design",
@@ -30,7 +30,7 @@ const Header = () => {
   ];
 
   const buttons = links.map((link) => {
-    const isActive = pathname === link.href;
+    const isActive = pathname.includes(link.href);
 
     return (
       <Link
