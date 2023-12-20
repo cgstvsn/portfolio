@@ -10,7 +10,7 @@ import ContactModal from "./_components/modals/ContactModal";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CGSTVSN",
+  title: "Cameron Gustavson",
   description:
     "Cameron is a front-end developer and designer based in the US. He has a background in graphic design as well as a wide variety of skills in other creative fields.",
 };
