@@ -57,7 +57,7 @@ export default function ContactModal() {
           leaveFrom='opacity-100'
           leaveTo='opacity-0'
         >
-          <div className='fixed inset-0 bg-zinc-900 bg-opacity-75 transition-opacity' />
+          <div className='fixed inset-0 bg-zinc-200 bg-opacity-75 transition-opacity' />
         </Transition.Child>
 
         <div className='fixed inset-0 z-10 overflow-y-auto'>
@@ -71,10 +71,10 @@ export default function ContactModal() {
               leaveFrom='opacity-100 translate-y-0 sm:scale-100'
               leaveTo='opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95'
             >
-              <Dialog.Panel className='relative overflow-hidden bg-zinc-800 rounded-lg transition-all w-full sm:w-[400px] p-6'>
+              <Dialog.Panel className='relative overflow-hidden bg-white rounded-lg transition-all w-full sm:w-[400px] p-6'>
                 {!(sending || sent) ? (
                   <>
-                    <h3 className='text-3xl font-semibold text-zinc-300 mb-4'>
+                    <h3 className='text-3xl font-semibold  mb-4'>
                       Send me a message!
                     </h3>
                     <p className='text-zinc-400 mb-4'>
@@ -112,7 +112,7 @@ export default function ContactModal() {
                         </div>
                         <Form.Control asChild className='w-full'>
                           <input
-                            className='rounded-md bg-zinc-700 text-zinc-300 py-1 px-2 hover:brightness-110 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
+                            className='rounded-md bg-zinc-200  py-1 px-2 hover:brightness-95 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
                             type='email'
                             required
                           />
@@ -137,7 +137,7 @@ export default function ContactModal() {
                         </div>
                         <Form.Control asChild className='w-full'>
                           <input
-                            className='rounded-md bg-zinc-700 text-zinc-300 py-1 px-2 hover:brightness-110 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
+                            className='rounded-md bg-zinc-200  py-1 px-2 hover:brightness-95 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
                             type='text'
                             required
                           />
@@ -162,14 +162,14 @@ export default function ContactModal() {
                         </div>
                         <Form.Control asChild className='w-full'>
                           <textarea
-                            className='rounded-md bg-zinc-700 text-zinc-300 py-1 px-2 hover:brightness-110 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
+                            className='rounded-md bg-zinc-200  py-1 px-2 hover:brightness-95 transition autofill:!bg-zinc-600 outline-0 ring-zinc-500 focus:ring-2'
                             required
                           />
                         </Form.Control>
                       </Form.Field>
 
                       <Form.Submit asChild>
-                        <button className='rounded-lg bg-zinc-700 border-t border-l border-zinc-600 px-3 py-1 w-full mt-4 hover:brightness-125 transition active:scale-95'>
+                        <button className='rounded-lg bg-zinc-800 text-white px-3 py-2 w-full mt-4 hover:brightness-150 transition active:scale-95'>
                           <div className='flex items-center justify-center gap-2'>
                             <svg
                               xmlns='http://www.w3.org/2000/svg'
@@ -198,7 +198,7 @@ export default function ContactModal() {
                       <div role='status'>
                         <svg
                           aria-hidden='true'
-                          className='w-12 h-12 mr-2 text-gray-200 animate-spin dark:text-zinc-400 fill-white'
+                          className='w-12 h-12 mr-2  animate-spin fill-white'
                           viewBox='0 0 100 101'
                           fill='none'
                           xmlns='http://www.w3.org/2000/svg'
@@ -221,7 +221,7 @@ export default function ContactModal() {
                         viewBox='0 0 24 24'
                         strokeWidth={1.5}
                         stroke='currentColor'
-                        className='w-12 h-12'
+                        className='w-12 h-12 text-emerald-500'
                       >
                         <path
                           strokeLinecap='round'
@@ -232,13 +232,13 @@ export default function ContactModal() {
                     )}
                     {/* text */}
                     {!sent ? (
-                      <p className='text-zinc-400'>Sending your message...</p>
+                      <p className='text-zinc-500'>Sending your message...</p>
                     ) : (
                       <div className='flex flex-col gap-4 items-center'>
-                        <p className='text-zinc-300 font-bold'>
+                        <p className=' font-bold'>
                           Message sent! I will get back to you ASAP!
                         </p>
-                        <p className='text-zinc-400'>
+                        <p className='text-zinc-500'>
                           Click outside window to close.
                         </p>
                       </div>
