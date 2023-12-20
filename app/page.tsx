@@ -3,22 +3,10 @@ import Link from "next/link";
 import { Github, Linkedin, Mails, ChevronRight } from "lucide-react";
 import TableOfContents from "./_components/home/TableOfContents";
 import SkillSection from "./_components/home/SkillSection";
-import FeaturedTabs from "./_components/home/FeaturedTabs";
-import SkillHover from "./_components/home/SkillHover";
+import FeaturedTabs from "./_components/home/featured/FeaturedTabs";
+import SocialButton from "./_components/SocialButton";
 
 import Me from "../public/me.jpg";
-
-const SocialButton = (props: any) => {
-  const { children, href } = props;
-  return (
-    <Link
-      href={href}
-      className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-100 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'
-    >
-      {children}
-    </Link>
-  );
-};
 
 export default function Home() {
   return (
@@ -60,15 +48,15 @@ export default function Home() {
             </a>
 
             <div className='col-start-2 col-span-3 flex flex-col sm:flex-row items-start gap-2'>
-              <SocialButton href='#'>
+              <SocialButton href='https://github.com/Flohhhhh'>
                 <Github size={18} /> GitHub
               </SocialButton>
-              <SocialButton href='#'>
+              <SocialButton href='https://www.linkedin.com/in/cgustavson/'>
                 <Linkedin size={18} /> LinkedIn
               </SocialButton>
-              <button className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-100 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'>
+              {/* <button className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-100 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'>
                 <Mails size={18} /> Email
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
