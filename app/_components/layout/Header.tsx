@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Dialog } from "@headlessui/react";
+import { ModalContext } from "@/context/modal.context";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
+  const { openModal } = useContext(ModalContext);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const links = [
@@ -56,7 +58,10 @@ const Header = () => {
           {/* right items */}
           <div className='flex items-center ml-auto'>
             {/* TODO open contact modal */}
-            <button className='hidden lg:block rounded-xl bg-zinc-800 text-white px-4 py-2 transition hover:bg-zinc-700 -mr-7'>
+            <button
+              onClick={() => openModal()}
+              className='hidden lg:block rounded-xl bg-zinc-800 text-white px-4 py-2 transition hover:bg-zinc-700 -mr-7'
+            >
               Contact
             </button>
             <button
