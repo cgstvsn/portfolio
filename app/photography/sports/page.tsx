@@ -1,3 +1,5 @@
+import { Instagram } from 'lucide-react';
+import SocialButton from '@/app/_components/SocialButton';
 import ImageCard from '../_components/ImageCard';
 
 // import football2 from "@/public/photos/sports/football2.jpg";
@@ -47,7 +49,6 @@ const page = () => {
           priority
         />
       </div>
-
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
           imgSrc={football4}
@@ -55,7 +56,6 @@ const page = () => {
           priority
         />
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -63,7 +63,6 @@ const page = () => {
           large
         />
       </div>
-
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
           imgSrc={baseball2}
@@ -79,7 +78,6 @@ const page = () => {
           <ImageCard imgSrc={baseball4} />
         </div>
       </div>
-
       {/* tall 2 */}
       <div className='flex flex-col md:flex-row gap-2 justify-center'>
         <div className='w-full aspect-[2/3] rounded-lg overflow-hidden'>
@@ -95,7 +93,6 @@ const page = () => {
           />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -103,7 +100,6 @@ const page = () => {
           large
         />
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -120,7 +116,6 @@ const page = () => {
           <ImageCard imgSrc={baseball3} />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -128,7 +123,6 @@ const page = () => {
           large
         />
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -136,7 +130,6 @@ const page = () => {
           large
         />
       </div>
-
       {/* row 2*/}
       <div className='flex flex-col md:flex-row gap-2 justify-center'>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
@@ -146,7 +139,6 @@ const page = () => {
           <ImageCard imgSrc={kid} />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -163,7 +155,6 @@ const page = () => {
           <ImageCard imgSrc={horse3} />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -180,7 +171,6 @@ const page = () => {
           <ImageCard imgSrc={rowing5} />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -197,13 +187,20 @@ const page = () => {
           <ImageCard imgSrc={baseball9} />
         </div>
       </div>
-
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
           imgSrc={field}
           large
         />
+      </div>
+
+      <div className='flex flex-col gap-4 mt-12 items-center justify-center'>
+        Thanks for checking out my gallery! To see more and follow me you can
+        check out my Instagram!
+        <SocialButton href='https://instagram.com/cgustavsonphoto'>
+          <Instagram size={18} /> Instagram
+        </SocialButton>
       </div>
     </div>
   );

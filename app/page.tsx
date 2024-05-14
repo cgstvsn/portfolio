@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import { Github, Linkedin, Mails, ChevronRight } from "lucide-react";
-import TableOfContents from "./_components/home/TableOfContents";
-import SkillSection from "./_components/home/SkillSection";
-import FeaturedTabs from "./_components/home/featured/FeaturedTabs";
-import SocialButton from "./_components/SocialButton";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Github, Linkedin, Instagram, Mails, ChevronRight } from 'lucide-react';
+import TableOfContents from './_components/home/TableOfContents';
+import SkillSection from './_components/home/SkillSection';
+import FeaturedTabs from './_components/home/featured/FeaturedTabs';
+import SocialButton from './_components/SocialButton';
 
-import Me from "../public/me.jpg";
+import Me from '../public/me.jpg';
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             <p className='text-2xl text-zinc-800'>Hello, web traveler!</p>
 
             <div className='flex -my-4'>
-              <h1 className='text-[100px] lg:text-[148px] font-bold text-zinc-800'>
+              <h1 className='text-[100px] lg:text-[148px] font-bold text-zinc-800 leading-tight'>
                 {/* I&apos;m Cam */}
                 I&apos;m Cam
               </h1>
@@ -53,6 +53,9 @@ export default function Home() {
               </SocialButton>
               <SocialButton href='https://www.linkedin.com/in/cgustavson/'>
                 <Linkedin size={18} /> LinkedIn
+              </SocialButton>
+              <SocialButton href='https://instagram.com/cgustavsonphoto'>
+                <Instagram size={18} /> Instagram
               </SocialButton>
               {/* <button className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-100 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'>
                 <Mails size={18} /> Email
