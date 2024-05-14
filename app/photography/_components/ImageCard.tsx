@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { useContext } from "react";
-import Image, { StaticImageData } from "next/image";
+import React, { useContext } from 'react';
+import Image, { StaticImageData } from 'next/image';
 // import { ModalContext } from "@/context/modal.context";
 
 type ImageCardProps = {
@@ -21,10 +21,10 @@ const ImageCard: React.FC<ImageCardProps> = ({ imgSrc, large, priority }) => {
         fill
         placeholder='blur'
         style={{
-          objectFit: "cover",
+          objectFit: 'cover',
         }}
         priority={priority}
-        sizes={`(max-width:768px) 100vw, ${large ? "100vw" : "33vw"}`}
+        sizes={`(max-width:768px) 100vw, ${large ? '100vw' : '40vw'}`}
       />
     </div>
   );

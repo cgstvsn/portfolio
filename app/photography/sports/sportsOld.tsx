@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageCard from '../_components/ImageCard';
 
 // import football2 from "@/public/photos/sports/football2.jpg";
@@ -12,8 +13,6 @@ import baseball8 from '@/public/photos/sports/baseball8.jpg';
 import baseball9 from '@/public/photos/sports/baseball9.jpg';
 import baseball10 from '@/public/photos/sports/baseball10.jpg';
 import baseball11 from '@/public/photos/sports/baseball11.jpg';
-import soccer1 from '@/public/photos/sports/soccer1.jpg';
-import soccer2 from '@/public/photos/sports/soccer2.jpg';
 import football3 from '@/public/photos/sports/football3.jpg';
 import football4 from '@/public/photos/sports/football4.jpg';
 import football6 from '@/public/photos/sports/football6.jpg';
@@ -33,12 +32,11 @@ import horse3 from '@/public/photos/sports/horse3.jpg';
 import horse4 from '@/public/photos/sports/horse4.jpg';
 import bball from '@/public/photos/sports/bball.jpg';
 import kid from '@/public/photos/sports/kid.jpg';
-import field from '@/public/photos/sports/field.jpg';
 
 const page = () => {
   return (
     // image grid container
-    <div className='w-full lg:w-[80%] mx-auto flex flex-col gap-2 my-8 px-6 lg:px-8'>
+    <div className='w-full lg:w-[80%] mx-auto flex flex-col gap-4 my-8 px-6 lg:px-8'>
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
@@ -48,40 +46,21 @@ const page = () => {
         />
       </div>
 
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={football4}
-          large
-          priority
-        />
-      </div>
-
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={soccer1}
-          large
-        />
-      </div>
-
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={baseball2}
-          large
-        />
-      </div>
-      {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
+      {/* row 3*/}
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={baseball5} />
+          <ImageCard imgSrc={football3} />
         </div>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
           <ImageCard imgSrc={baseball4} />
         </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard imgSrc={football14} />
+        </div>
       </div>
 
       {/* tall 2 */}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
         <div className='w-full aspect-[2/3] rounded-lg overflow-hidden'>
           <ImageCard
             imgSrc={bball}
@@ -99,25 +78,67 @@ const page = () => {
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
-          imgSrc={soccer2}
+          imgSrc={horse4}
           large
         />
       </div>
 
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={baseball6}
-          large
-        />
-      </div>
-      {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
+      {/* row 3*/}
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={baseball9} />
+          <ImageCard imgSrc={horse1} />
         </div>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={baseball3} />
+          <ImageCard imgSrc={horse3} />
+        </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard imgSrc={baseball10} />
+        </div>
+      </div>
+
+      {/* ROWING */}
+      {/* row 3 */}
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={baseball2}
+            priority
+          />
+        </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={baseball3}
+            priority
+          />
+        </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={rowing2}
+            priority
+          />
+        </div>
+      </div>
+
+      {/* ROWING */}
+      {/* row 3*/}
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={rowing3}
+            priority
+          />
+        </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={baseball6}
+            priority
+          />
+        </div>
+        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
+          <ImageCard
+            imgSrc={rowing5}
+            priority
+          />
         </div>
       </div>
 
@@ -129,16 +150,8 @@ const page = () => {
         />
       </div>
 
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={football15}
-          large
-        />
-      </div>
-
       {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
+      <div className='flex flex-col md:flex-row gap-4 justify-center'>
         <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
           <ImageCard imgSrc={football13} />
         </div>
@@ -150,58 +163,7 @@ const page = () => {
       {/* full image */}
       <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
         <ImageCard
-          imgSrc={horse4}
-          large
-        />
-      </div>
-      {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={horse1} />
-        </div>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={horse3} />
-        </div>
-      </div>
-
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={rowing2}
-          large
-        />
-      </div>
-      {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={rowing3} />
-        </div>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={rowing5} />
-        </div>
-      </div>
-
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={baseball7}
-          large
-        />
-      </div>
-      {/* row 2*/}
-      <div className='flex flex-col md:flex-row gap-2 justify-center'>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={baseball8} />
-        </div>
-        <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-          <ImageCard imgSrc={baseball9} />
-        </div>
-      </div>
-
-      {/* full image */}
-      <div className='w-full aspect-[3/2] rounded-lg overflow-hidden'>
-        <ImageCard
-          imgSrc={field}
+          imgSrc={football15}
           large
         />
       </div>
