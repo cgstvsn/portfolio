@@ -104,6 +104,10 @@ const SkillSection = () => {
                   Other skills
                 </h2>
                 <ul className='flex gap-8 flex-wrap justify-center lg:justify-start mt-2 list-disc lg:pl-[18px] text-zinc-500'>
+                  <li>Agentic Programming</li>
+                  <li>Drizzle ORM</li>
+                  <li>Postgres</li>
+                  <li>Convex DB</li>
                   <li>LUA Scripting</li>
                   <li>Graphic Design</li>
                   <li>Branding Design</li>

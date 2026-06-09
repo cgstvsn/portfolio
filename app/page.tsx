@@ -38,7 +38,7 @@ export default function Home() {
             </p>
 
             <a
-              href='https://rxresu.me/camgus322/frontend'
+              href='https://rxresu.me/camgus322/guilty-indigo-raven'
               className='group col-start-2 col-span-3 flex items-center gap-2 mb-16'
             >
               View my resume!
@@ -54,7 +54,7 @@ export default function Home() {
               <SocialButton href='https://www.linkedin.com/in/cgustavson/'>
                 <Linkedin size={18} /> LinkedIn
               </SocialButton>
-              <SocialButton href='https://instagram.com/cgustavsonphoto'>
+              <SocialButton href='https://instagram.com/camgstvsn'>
                 <Instagram size={18} /> Instagram
               </SocialButton>
               {/* <button className='flex items-center justify-center gap-2 w-full sm:w-min bg-zinc-100 text-zinc-800 hover:brightness-95 transition rounded-lg px-8 py-2'>
