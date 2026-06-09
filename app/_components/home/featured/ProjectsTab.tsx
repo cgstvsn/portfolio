@@ -12,15 +12,15 @@ const ProjectsTab = () => {
       label: "Sharply",
       image: Sharply,
       url: "https://sharplyphoto.com",
-      sourceUrl: "#",
+      sourceUrl: "https://github.com/Flohhhhh/sharply",
       description:
         "A contributor-driven photography platform for personalized comparisons, real specs, and real reviews from both users and experts.",
     },
     {
       label: "NJ Highway Toolkit",
       image: NjHighwayToolkit,
-      url: "https://tptoolkit.com",
-      sourceUrl: "https://github.com/Flohhhhh/tpa-tools",
+      url: "https://njht.app/",
+      sourceUrl: "https://github.com/Flohhhhh/nj-highway-toolkit",
       description:
         "A comprehensive reverse geo-coder covering all major highways, interstates, county roads, and state highways across New Jersey, along with landmarks, points of interest, and critical infrastructure. Built as a passion project born from necessity, this tool helps 911 dispatchers and emergency responders quickly parse location information and facilitate faster emergency services response.",
     },
