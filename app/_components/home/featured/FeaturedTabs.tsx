@@ -22,11 +22,11 @@ const FeaturedTabs = () => {
       header: "Selected Projects",
       component: ProjectsTab,
     },
-    {
-      label: "Photography",
-      header: "Photography Samples",
-      component: PhotosTab,
-    },
+    // {
+    //   label: "Photography",
+    //   header: "Photography Samples",
+    //   component: PhotosTab,
+    // },
     // {
     //   label: "Design",
     //   header: "Design Samples",

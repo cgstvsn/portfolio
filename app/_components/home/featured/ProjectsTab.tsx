@@ -1,5 +1,6 @@
 import ProjectCard from "../ProjectCard";
 
+import Sharply from "@/public/thumbnails/sharply.png";
 import NjHighwayToolkit from "@/public/thumbnails/njhighwaytoolkit.png";
 import Facekick from "@/public/thumbnails/facekick.png";
 import ULC from "@/public/thumbnails/ulcgenerator.png";
@@ -8,6 +9,14 @@ import This from "@/public/thumbnails/this.png";
 const ProjectsTab = () => {
   const projects = [
     {
+      label: "Sharply",
+      image: Sharply,
+      url: "https://sharplyphoto.com",
+      sourceUrl: "#",
+      description:
+        "A contributor-driven photography platform for personalized comparisons, real specs, and real reviews from both users and experts.",
+    },
+    {
       label: "NJ Highway Toolkit",
       image: NjHighwayToolkit,
       url: "https://tptoolkit.com",
@@ -15,14 +24,14 @@ const ProjectsTab = () => {
       description:
         "A comprehensive reverse geo-coder covering all major highways, interstates, county roads, and state highways across New Jersey, along with landmarks, points of interest, and critical infrastructure. Built as a passion project born from necessity, this tool helps 911 dispatchers and emergency responders quickly parse location information and facilitate faster emergency services response.",
     },
-    {
-      label: "Facekick Studios",
-      image: Facekick,
-      url: "https://facekick-site.vercel.app",
-      sourceUrl: "#",
-      description:
-        "I created this page for a friend of mine for his programming business. I was tasked with creating the frontend including buttons that were ready for backend logic.",
-    },
+    // {
+    //   label: "Facekick Studios",
+    //   image: Facekick,
+    //   url: "https://facekick-site.vercel.app",
+    //   sourceUrl: "#",
+    //   description:
+    //     "I created this page for a friend of mine for his programming business. I was tasked with creating the frontend including buttons that were ready for backend logic.",
+    // },
     {
       label: "ULC Generator",
       image: ULC,
