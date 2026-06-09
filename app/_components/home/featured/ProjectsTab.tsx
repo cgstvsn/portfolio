@@ -1,6 +1,6 @@
 import ProjectCard from "../ProjectCard";
 
-import TpToolkit from "@/public/thumbnails/tptoolkit.png";
+import NjHighwayToolkit from "@/public/thumbnails/njhighwaytoolkit.png";
 import Facekick from "@/public/thumbnails/facekick.png";
 import ULC from "@/public/thumbnails/ulcgenerator.png";
 import This from "@/public/thumbnails/this.png";
@@ -8,12 +8,12 @@ import This from "@/public/thumbnails/this.png";
 const ProjectsTab = () => {
   const projects = [
     {
-      label: "TP Toolkit",
-      image: TpToolkit,
+      label: "NJ Highway Toolkit",
+      image: NjHighwayToolkit,
       url: "https://tptoolkit.com",
       sourceUrl: "https://github.com/Flohhhhh/tpa-tools",
       description:
-        "This project is a reverse geo-coder for locations along the major highways in New Jersey, the NJ Turnpike and the Garden State Parkway. I created this for work, since there was a need for a tool like this to improve our workflow.",
+        "A comprehensive reverse geo-coder covering all major highways, interstates, county roads, and state highways across New Jersey, along with landmarks, points of interest, and critical infrastructure. Built as a passion project born from necessity, this tool helps 911 dispatchers and emergency responders quickly parse location information and facilitate faster emergency services response.",
     },
     {
       label: "Facekick Studios",
