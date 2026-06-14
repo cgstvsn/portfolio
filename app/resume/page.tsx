@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { redirect } from "next/navigation";
 
 const Page = () => {
-  redirect("https://rxresu.me/camgus322/guilty-indigo-raven");
+  redirect("https://rxresu.me/camgus322/frontend-2026");
 
   return <div></div>;
 };

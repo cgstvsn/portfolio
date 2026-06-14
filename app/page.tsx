@@ -6,8 +6,6 @@ import SkillSection from './_components/home/SkillSection';
 import FeaturedTabs from './_components/home/featured/FeaturedTabs';
 import SocialButton from './_components/SocialButton';
 
-import Me from '../public/me.jpg';
-
 export default function Home() {
   return (
     <main className='relative'>
@@ -38,7 +36,7 @@ export default function Home() {
             </p>
 
             <a
-              href='https://rxresu.me/camgus322/guilty-indigo-raven'
+              href='https://rxresu.me/camgus322/frontend-2026'
               className='group col-start-2 col-span-3 flex items-center gap-2 mb-16'
             >
               View my resume!
