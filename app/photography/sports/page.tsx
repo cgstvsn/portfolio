@@ -198,7 +198,7 @@ const page = () => {
       <div className='flex flex-col gap-4 mt-12 items-center justify-center'>
         Thanks for checking out my gallery! To see more and follow me you can
         check out my Instagram!
-        <SocialButton href='https://instagram.com/cgustavsonphoto'>
+        <SocialButton href='https://instagram.com/camgstvsn'>
           <Instagram size={18} /> Instagram
         </SocialButton>
       </div>

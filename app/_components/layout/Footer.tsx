@@ -1,13 +1,10 @@
 'use client';
 
-import React, { useContext } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { Github, Linkedin, Mails, Instagram } from 'lucide-react';
-import { ModalContext } from '@/context/modal.context';
 
 const Footer = () => {
-  const { openModal } = useContext(ModalContext);
-
   return (
     <div className='w-full bg-zinc-100 mt-24'>
       <div className='flex flex-col max-w-7xl mx-auto p-8'>
@@ -35,18 +32,18 @@ const Footer = () => {
                 <Linkedin size={18} />
               </Link>
               <Link
-                href='https://instagram.com/cgustavsonphoto'
+                href='https://instagram.com/camgstvsn'
                 target='_blank'
                 className='bg-white p-2 rounded-lg border border-zinc-200 hover:brightness-95 transition'
               >
                 <Instagram size={18} />
               </Link>
-              <button
-                onClick={() => openModal()}
+              <a
+                href='mailto:cameron.gustavson+portfolio@gmail.com'
                 className='bg-white p-2 rounded-lg border border-zinc-200 hover:brightness-95 transition'
               >
                 <Mails size={18} />
-              </button>
+              </a>
             </div>
           </div>
           {/* right */}

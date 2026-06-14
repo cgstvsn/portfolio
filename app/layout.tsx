@@ -5,7 +5,7 @@ import "./globals.css";
 import Providers from "@/context/providers";
 import Header from "./_components/layout/Header";
 import Footer from "./_components/layout/Footer";
-import ContactModal from "./_components/modals/ContactModal";
+// import ContactModal from "./_components/modals/ContactModal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,8 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <ContactModal />
+          {/* Contact form modal is temporarily disabled in favor of a mailto link. */}
+          {/* <ContactModal /> */}
         </Providers>
       </body>
     </html>

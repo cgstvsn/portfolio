@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { Github, Linkedin, Instagram, Mails, ChevronRight } from 'lucide-react';
+import { Github, Linkedin, Instagram, ChevronRight } from 'lucide-react';
 import TableOfContents from './_components/home/TableOfContents';
 import SkillSection from './_components/home/SkillSection';
 import FeaturedTabs from './_components/home/featured/FeaturedTabs';
@@ -21,7 +19,7 @@ export default function Home() {
             <p className='text-2xl text-zinc-800'>Hello, web traveler!</p>
 
             <div className='flex -my-4'>
-              <h1 className='text-[96px] lg:text-[148px] font-bold text-zinc-800 tracking-tighter leading-none py-4 sm:py-0'>
+              <h1 className='text-[96px] lg:text-[148px] font-bold text-zinc-800 tracking-tighter leading-none py-4 sm:py-8'>
                 {/* I&apos;m Cam */}
                 I&apos;m Cam
               </h1>
@@ -66,7 +64,7 @@ export default function Home() {
 
         <SkillSection />
 
-        <div className='flex flex-col items-center lg:items-start gap-4 w-full py-12'>
+        <div className='w-full py-12'>
           <FeaturedTabs />
         </div>
       </div>

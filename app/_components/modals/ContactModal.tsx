@@ -39,7 +39,7 @@ export default function ContactModal() {
           console.log(error.text);
           setSending(false);
           alert(
-            "Could not send your message, try again later or email me directly at cameron.gustavson@gmail.com"
+            "Could not send your message, try again later or email me directly at cameron.gustavson+portfolio@gmail.com"
           );
         }
       );
@@ -79,7 +79,7 @@ export default function ContactModal() {
                     </h3>
                     <p className='text-zinc-400 mb-4'>
                       You can email me directly instead at
-                      cameron.gustavson@gmail.com if you prefer!
+                      cameron.gustavson+portfolio@gmail.com if you prefer!
                     </p>
 
                     <Form.Root
