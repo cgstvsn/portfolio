@@ -21,7 +21,7 @@ export default function Home() {
             <p className='text-2xl text-zinc-800'>Hello, web traveler!</p>
 
             <div className='flex -my-4'>
-              <h1 className='text-[100px] lg:text-[148px] font-bold text-zinc-800 leading-tight'>
+              <h1 className='text-[96px] lg:text-[148px] font-bold text-zinc-800 tracking-tighter leading-none py-4 sm:py-0'>
                 {/* I&apos;m Cam */}
                 I&apos;m Cam
               </h1>
@@ -37,7 +37,7 @@ export default function Home() {
 
             <a
               href='https://rxresu.me/camgus322/frontend-2026'
-              className='group col-start-2 col-span-3 flex items-center gap-2 mb-16'
+              className='group col-start-2 col-span-3 flex items-center gap-2 mb-4 sm:mb-16'
             >
               View my resume!
               <span className='group-hover:translate-x-2 transition text-zinc-800'>
